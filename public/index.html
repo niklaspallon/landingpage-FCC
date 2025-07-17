@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FANTASY CROSSCOUNTRY</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="sandbox.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#home" class="nav-logo">FANTASY CROSSCOUNTRY</a>
+            <div class="nav-links">
+                <a href="#about">Om Spelet</a>
+                <a href="#rules">Regler & Tips</a>
+                <a href="#season">Aktuell Säsong</a>
+                <a href="#news">Nyheter</a>
+                <a href="#contact">Kontakt</a>
+                <a href="admin.html">Admin</a>
+            </div>
+            <button class="nav-toggle">☰</button>
+        </div>
+    </nav>
+
+    <div id="home" class="backcontainer">
+        <div class="content">
+            <p class="shortDesc">Fantasy crosscountry är ett spel där användare tar ut sitt lag och sedan får poäng baserat på hur åkarna presterar i verkligehten</p>
+            <a href="https://realfls.web.app/" class="play-button">Tryck här för att komma till spelet</a>
+            
+            <div class="image-container">
+                <img class="homescreen" src="img/Sc_homescreen2.jpg">
+                <img src="img/Sc_chooseskier.jpg">
+            </div>
+
+            <!-- Om Spelet -->
+            <section id="about" class="info-section">
+                <h2>Om Spelet</h2>
+                <div class="info-content">
+                    <p>I Fantasy Crosscountry bygger du ditt drömlag av åkare från världseliten. Varje åkare har ett värde baserat på deras prestanda, och du har en budget att arbeta med. Ju bättre dina åkare presterar i verkliga tävlingar, desto fler poäng får du!</p>
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <h3>Poängsystem</h3>
+                            <p>Poäng delas ut baserat på placeringar i tävlingar, med bonuspoäng för särskilda prestationer som personbästa eller starka etapper.</p>
+                        </div>
+                        <div class="info-card">
+                            <h3>Lagbyggande</h3>
+                            <p>Strategiskt tänkande är nyckeln. Balansera mellan etablerade stjärnor och lovande talanger för att maximera dina poäng.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Regler & Tips -->
+            <section id="rules" class="rules-section">
+                <h2>Regler & Tips</h2>
+                <div class="rules-content">
+                    <div class="rules-grid">
+                        <div class="rule-card">
+                            <h3>Grundläggande Regler</h3>
+                            <ul>
+                                <li>Max 8 åkare per lag</li>
+                                <li>Budget: 100 miljoner kronor</li>
+                                <li>Minst 2 åkare från varje kön</li>
+                                <li>Lagändringar tillåtna före varje tävling</li>
+                            </ul>
+                        </div>
+                        <div class="rule-card">
+                            <h3>Tips för Nybörjare</h3>
+                            <ul>
+                                <li>Följ formkurvan</li>
+                                <li>Balansera mellan sprinter och distansåkare</li>
+                                <li>Håll koll på skador</li>
+                                <li>Var strategisk med wildcards</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Aktuell Säsong -->
+            <section id="season" class="season-section">
+                <h2>Aktuell Säsong</h2>
+                <div class="season-content">
+                    <div class="season-stats">
+                        <div class="stat-card">
+                            <h3>Topp 5 Lag</h3>
+                            <ol>
+                                <li>Vinnarlaget - 1250p</li>
+                                <li>Silverlaget - 1180p</li>
+                                <li>Bronslaget - 1150p</li>
+                                <li>Fjärdeplats - 1100p</li>
+                                <li>Femteplats - 1080p</li>
+                            </ol>
+                        </div>
+                        <div class="stat-card">
+                            <h3>Kommande Tävlingar</h3>
+                            <ul>
+                                <li>Tour de Ski - 1-7 Jan</li>
+                                <li>VM i Planica - 15-25 Feb</li>
+                                <li>Världscupfinal - 15-19 Mar</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Nyheter -->
+            <section id="news" class="news-section">
+                <h2>Senaste Nyheterna</h2>
+                <div class="news-grid">
+                    <article class="news-card">
+                        <h3>Ny Säsong Startar Snart!</h3>
+                        <p>Förbered dig för en spännande säsong med nya funktioner och förbättringar...</p>
+                        <span class="news-date">2024-04-25</span>
+                    </article>
+                    <article class="news-card">
+                        <h3>Toppåkare Bekräftade</h3>
+                        <p>De bästa åkarna i världen är redo för den kommande säsongen...</p>
+                        <span class="news-date">2024-04-24</span>
+                    </article>
+                </div>
+            </section>
+
+
+            <!-- Kontakt -->
+            <section id="contact" class="contact-section">
+                <h2>Kontakta Oss</h2>
+                <div class="contact-content">
+                    <form class="contact-form">
+                        <input type="text" placeholder="Ditt namn">
+                        <input type="email" placeholder="Din e-post">
+                        <textarea placeholder="Ditt meddelande"></textarea>
+                        <button type="submit">Skicka</button>
+                    </form>
+                    <div class="contact-info">
+                        <p>E-post: support@fantasycrosscountry.se</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="js/admin.js"></script>
+</body>
+</html>
+
