@@ -1,146 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FANTASY CROSSCOUNTRY</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="sandbox.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FANTASY CROSSCOUNTRY</title>
+  <link rel="stylesheet" href="css/app.css" />
+  <script src="js/app.js" defer></script>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-content">
-            <a href="#home" class="nav-logo">FANTASY CROSSCOUNTRY</a>
-            <div class="nav-links">
-                <a href="#about">Om Spelet</a>
-                <a href="#rules">Regler & Tips</a>
-                <a href="#season">Aktuell Säsong</a>
-                <a href="#news">Nyheter</a>
-                <a href="#contact">Kontakt</a>
-                <a href="admin.html">Admin</a>
-            </div>
-            <button class="nav-toggle">☰</button>
-        </div>
-    </nav>
-
-    <div id="home" class="backcontainer">
-        <div class="content">
-            <p class="shortDesc">Fantasy crosscountry är ett spel där användare tar ut sitt lag och sedan får poäng baserat på hur åkarna presterar i verkligehten</p>
-            <a href="https://realfls.web.app/" class="play-button">Tryck här för att komma till spelet</a>
-            
-            <div class="image-container">
-                <img class="homescreen" src="img/Sc_homescreen2.jpg">
-                <img src="img/Sc_chooseskier.jpg">
-            </div>
-
-            <!-- Om Spelet -->
-            <section id="about" class="info-section">
-                <h2>Om Spelet</h2>
-                <div class="info-content">
-                    <p>I Fantasy Crosscountry bygger du ditt drömlag av åkare från världseliten. Varje åkare har ett värde baserat på deras prestanda, och du har en budget att arbeta med. Ju bättre dina åkare presterar i verkliga tävlingar, desto fler poäng får du!</p>
-                    <div class="info-grid">
-                        <div class="info-card">
-                            <h3>Poängsystem</h3>
-                            <p>Poäng delas ut baserat på placeringar i tävlingar, med bonuspoäng för särskilda prestationer som personbästa eller starka etapper.</p>
-                        </div>
-                        <div class="info-card">
-                            <h3>Lagbyggande</h3>
-                            <p>Strategiskt tänkande är nyckeln. Balansera mellan etablerade stjärnor och lovande talanger för att maximera dina poäng.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Regler & Tips -->
-            <section id="rules" class="rules-section">
-                <h2>Regler & Tips</h2>
-                <div class="rules-content">
-                    <div class="rules-grid">
-                        <div class="rule-card">
-                            <h3>Grundläggande Regler</h3>
-                            <ul>
-                                <li>Max 8 åkare per lag</li>
-                                <li>Budget: 100 miljoner kronor</li>
-                                <li>Minst 2 åkare från varje kön</li>
-                                <li>Lagändringar tillåtna före varje tävling</li>
-                            </ul>
-                        </div>
-                        <div class="rule-card">
-                            <h3>Tips för Nybörjare</h3>
-                            <ul>
-                                <li>Följ formkurvan</li>
-                                <li>Balansera mellan sprinter och distansåkare</li>
-                                <li>Håll koll på skador</li>
-                                <li>Var strategisk med wildcards</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Aktuell Säsong -->
-            <section id="season" class="season-section">
-                <h2>Aktuell Säsong</h2>
-                <div class="season-content">
-                    <div class="season-stats">
-                        <div class="stat-card">
-                            <h3>Topp 5 Lag</h3>
-                            <ol>
-                                <li>Vinnarlaget - 1250p</li>
-                                <li>Silverlaget - 1180p</li>
-                                <li>Bronslaget - 1150p</li>
-                                <li>Fjärdeplats - 1100p</li>
-                                <li>Femteplats - 1080p</li>
-                            </ol>
-                        </div>
-                        <div class="stat-card">
-                            <h3>Kommande Tävlingar</h3>
-                            <ul>
-                                <li>Tour de Ski - 1-7 Jan</li>
-                                <li>VM i Planica - 15-25 Feb</li>
-                                <li>Världscupfinal - 15-19 Mar</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Nyheter -->
-            <section id="news" class="news-section">
-                <h2>Senaste Nyheterna</h2>
-                <div class="news-grid">
-                    <article class="news-card">
-                        <h3>Ny Säsong Startar Snart!</h3>
-                        <p>Förbered dig för en spännande säsong med nya funktioner och förbättringar...</p>
-                        <span class="news-date">2024-04-25</span>
-                    </article>
-                    <article class="news-card">
-                        <h3>Toppåkare Bekräftade</h3>
-                        <p>De bästa åkarna i världen är redo för den kommande säsongen...</p>
-                        <span class="news-date">2024-04-24</span>
-                    </article>
-                </div>
-            </section>
-
-
-            <!-- Kontakt -->
-            <section id="contact" class="contact-section">
-                <h2>Kontakta Oss</h2>
-                <div class="contact-content">
-                    <form class="contact-form">
-                        <input type="text" placeholder="Ditt namn">
-                        <input type="email" placeholder="Din e-post">
-                        <textarea placeholder="Ditt meddelande"></textarea>
-                        <button type="submit">Skicka</button>
-                    </form>
-                    <div class="contact-info">
-                        <p>E-post: support@fantasycrosscountry.se</p>
-                    </div>
-                </div>
-            </section>
-        </div>
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#home" class="nav-logo">FANTASY CROSSCOUNTRY</a>
+      <nav id="primary-navigation" class="nav-links" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#rules">Rules</a>
+        <a href="#season">Season</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Menu">☰</button>
     </div>
-    <script src="js/admin.js"></script>
+  </header>
+  <main>
+  <!-- HERO -->
+  <section id="home" class="hero section">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <div class="eyebrow">Free to play • New season 2025</div>
+        <h1>Build. Strategize. Dominate <span class="accent">Cross‑Country</span>.</h1>
+        <p class="subtitle">
+          Draft elite skiers, balance your budget, and outsmart competitors across every World Cup weekend.
+        </p>
+        <div class="cta-row">
+          <a href="https://realfls.web.app/" class="button primary">Play Now</a>
+          <a href="#rules" class="button ghost">See Rules</a>
+        </div>
+        <div class="trust-strip">
+          <div class="stat"><strong>200+</strong> athletes</div>
+          <div class="stat"><strong>All</strong> WC weekends</div>
+          <div class="stat"><strong>Live</strong> updates</div>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img class="mockup main" src="img/homesc.jpg" alt="Game home screen" loading="lazy">
+        <img class="mockup alt" src="img/chooseskiersc.jpg" alt="Select skier screen" loading="lazy">
+      </div>
+    </div>
+    <div class="hero-shape" aria-hidden="true"></div>
+  </section>
+
+  <!-- FEATURES / HIGHLIGHTS -->
+  <section id="features" class="section">
+    <div class="container section-inner section-bg reveal">
+      <h2>Game Highlights</h2>
+      <div class="feature-grid news-grid">
+        <article class="card feature-card">
+          <h3>Draft Your Squad</h3>
+          <p>Select six skiers within your budget and build a balanced team for every terrain and stage.</p>
+        </article>
+        <article class="card feature-card">
+          <h3>Race Weekends</h3>
+          <p>Make transfers before each World Cup stop, track form, and react to late changes.</p>
+        </article>
+        <article class="card feature-card">
+          <h3>Climb the Leaderboard</h3>
+          <p>Earn points from real results and prove you’re the ultimate ski manager.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container section-inner section-bg reveal">
+    <h2>About the Game</h2>
+    <div class="info-content">
+      <p>In Fantasy Crosscountry, you build your own team of top cross-country skiers. Each athlete has a price based on performance, and you have a limited budget. The better your team performs in real-world competitions, the more points you earn.</p>
+      <div class="info-grid news-grid">
+        <div class="card info-card">
+          <h3>Point System</h3>
+          <p>Points are awarded based on race results, with bonuses for things like stage wins, strong climbs, or personal bests.</p>
+        </div>
+        <div class="card info-card">
+          <h3>Team Building</h3>
+          <p>Strategy matters! Balance well-known stars with promising talents to optimize your score.</p>
+        </div>
+      </div>
+    </div>
+  </div></section>
+
+  <!-- RULES -->
+  <section id="rules" class="section">
+    <div class="container section-inner section-bg reveal">
+    <h2>Rules & Tips</h2>
+    <div class="rules-content">
+      <div class="rules-grid news-grid">
+        <div class="card rule-card">
+          <h3>Basic Rules</h3>
+          <ul class="list-dot">
+            <li>6 skiers per team</li>
+            <li>Total budget: 100 million $</li>
+            <li>3 athletes of each gender</li>
+            <li>Team changes allowed before each race weekend</li>
+          </ul>
+        </div>
+        <div class="card rule-card">
+          <h3>Tips for Beginners</h3>
+          <ul class="list-dot">
+            <li>Track recent form and performance</li>
+            <li>Mix sprinters and distance specialists</li>
+            <li>Watch for injuries or DNS</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div></section>
+
+  <!-- SEASON -->
+  <section id="season" class="section">
+    <div class="container section-inner section-bg reveal">
+    <h2>Current Season</h2>
+    <div class="season-content">
+      <div class="season-stats news-grid">
+        <div class="card stat-card">
+          <h3>Top 5 Teams</h3>
+          <ol>
+            <li>Winning Team – 1250 pts</li>
+            <li>Runner-Up – 1180 pts</li>
+            <li>Third Place – 1150 pts</li>
+            <li>Fourth – 1100 pts</li>
+            <li>Fifth – 1080 pts</li>
+          </ol>
+        </div>
+        <div class="card stat-card">
+          <h3>Upcoming Races</h3>
+          <ul>
+            <li>28-30 Nov 2025 — Ruka</li>
+            <li>05-07 Dec 2025 — Trondheim</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div></section>
+
+  <!-- NEWS -->
+  <section id="news" class="section">
+    <div class="container section-inner section-bg reveal">
+      <h2>Latest News</h2>
+      <div class="news-grid">
+        <article class="card news-card">
+          <span class="chip news-date">2024-04-25</span>
+          <h3>New Season Coming Soon!</h3>
+          <p>Get ready for exciting updates and improvements as the new season launches...</p>
+          <div class="actions"><a href="#" class="btn btn-link">Read more</a></div>
+        </article>
+        <article class="card news-card">
+          <span class="chip news-date">2024-04-24</span>
+          <h3>Top Athletes Confirmed</h3>
+          <p>The world’s best skiers are set for another intense season of racing...</p>
+          <div class="actions"><a href="#" class="btn btn-link">Read more</a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container section-inner section-bg reveal">
+      <h2>Contact Us</h2>
+      <div class="contact-grid">
+        <article class="card">
+          <form class="form" aria-label="Contact form">
+            <div class="field">
+              <label class="label" for="name">Name</label>
+              <input id="name" name="name" type="text" class="input" placeholder="Your name" autocomplete="name" aria-required="true" />
+              <small class="hint">Please enter your full name.</small>
+            </div>
+            <div class="field">
+              <label class="label" for="email">Email</label>
+              <input id="email" name="email" type="email" class="input" placeholder="you@example.com" autocomplete="email" aria-required="true" />
+              <small class="hint">We’ll only use this to reply.</small>
+            </div>
+            <div class="field">
+              <label class="label" for="message">Message</label>
+              <textarea id="message" name="message" class="textarea" placeholder="How can we help?" aria-required="true"></textarea>
+            </div>
+            <div>
+              <button type="submit" class="btn btn-primary">Send</button>
+            </div>
+          </form>
+        </article>
+        <article class="card">
+          <h3>Contact Information</h3>
+          <p>Email: support@fantasycrosscountry.se</p>
+          <p>We aim to respond within 2 business days.</p>
+          <div class="trust-strip" style="margin-top:10px;">
+            <div class="stat"><strong>Live</strong> season</div>
+            <div class="stat"><strong>Community</strong> leagues</div>
+            <div class="stat"><strong>Privacy-first</strong></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© Fantasy Crosscountry</div>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="#rules">Rules</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>
-
