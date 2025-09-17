@@ -82,4 +82,56 @@ document.addEventListener('DOMContentLoaded', () => {
 
   placeHeroMedia();
   window.addEventListener('resize', placeHeroMedia);
+
+  // Scoring table modal (rules page)
+  const scoringModal = document.getElementById('scoring-modal');
+  const scoringTrigger = document.querySelector('[data-open-scoring]');
+  if (scoringModal && scoringTrigger) {
+    const closeBtn = scoringModal.querySelector('[data-close-scoring]');
+    const supportsDialog = typeof scoringModal.showModal === 'function';
+    let lastFocused = null;
+
+    const openScoring = () => {
+      lastFocused = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+      if (supportsDialog) {
+        scoringModal.showModal();
+      } else {
+        scoringModal.setAttribute('open', 'true');
+      }
+    };
+
+    const closeScoring = () => {
+      if (supportsDialog && scoringModal.open) {
+        scoringModal.close();
+      } else {
+        scoringModal.removeAttribute('open');
+      }
+      if (lastFocused) {
+        lastFocused.focus({ preventScroll: true });
+      } else {
+        scoringTrigger.focus({ preventScroll: true });
+      }
+    };
+
+    scoringTrigger.addEventListener('click', openScoring);
+    closeBtn?.addEventListener('click', closeScoring);
+
+    scoringModal.addEventListener('cancel', event => {
+      event.preventDefault();
+      closeScoring();
+    });
+
+    scoringModal.addEventListener('click', event => {
+      if (event.target === scoringModal) {
+        closeScoring();
+      }
+    });
+
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && scoringModal.hasAttribute('open')) {
+        closeScoring();
+      }
+    });
+  }
+
 });
